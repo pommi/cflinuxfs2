@@ -1,5 +1,8 @@
 set -e -x
 
+apt-get update
+apt-get install -y --force-yes --no-install-recommends libreadline6-dev tzdata locales
+
 cp /tmp/assets/etc/default/locale /etc/default/locale
 
 # disable interactive dpkg
